@@ -1,0 +1,13 @@
+node_modules/
+dist/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.user
+.vs/
+.idea/
+.DS_Store
+*.local
+.env

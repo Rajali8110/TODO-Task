@@ -1,0 +1,53 @@
+/* Overdue row highlight — target both tr and td to override Bootstrap */
+tr.overdue,
+tr.overdue td {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+}
+
+/* Checkbox toggle */
+.task-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: all 0.2s;
+}
+
+.task-checkbox.checked {
+  border-color: #4caf50;
+  background: #4caf50;
+}
+
+.task-checkbox.checked::after {
+  content: "\2713";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Completed task strikethrough */
+.task-text.done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Word wrap for long titles */
+td:first-child {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
